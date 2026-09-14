@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="STYLES.CSS">
 
 </head>
+<div id="popup" class="popup">
+    <div class="popup-contenido">
+        <button class="cerrar" onclick="cerrarPopup()">✕</button>
 
+        <video controls autoplay muted>
+            <source src="meme.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+        </video>
+    </div>
+</div>
+
+<script>
+function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
 <body>
 
     <header>
